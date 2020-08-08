@@ -30771,3 +30771,414 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1118)
 
 
+Started GET "/" for ::1 at 2020-08-08 14:02:49 +0900
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 8.7ms | Allocations: 1436)
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY `items`.`id` DESC[0m
+  ↳ app/views/items/index.html.erb:124
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` IN (5, 4, 2, 1)[0m
+  ↳ app/views/items/index.html.erb:124
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 1087)
+  Rendered items/index.html.erb within layouts/application (Duration: 50.8ms | Allocations: 19484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 81.6ms | ActiveRecord: 3.4ms | Allocations: 37084)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--47ebd826b0c309f652f9352cf96d879e709cd9ad/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0/bbking.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+Processing by ActiveStorage::RepresentationsController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--47ebd826b0c309f652f9352cf96d879e709cd9ad", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0", "filename"=>"bbking"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 5 LIMIT 1[0m
+[36m  Disk Storage (0.1ms) [0m[34mChecked if file exists at key: variants/ckkb6c3hwj1n9k73x9gbtsms7d1c/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (yes)[0m
+[36m  Disk Storage (2.2ms) [0m[34mGenerated URL for file at key: variants/ckkb6c3hwj1n9k73x9gbtsms7d1c/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms | Allocations: 2608)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be36d900bf176063017c68af56d5c12a71ad70ab/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0/bbking.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8d6cda1c7720842a31eb6bed4efea430eb710e6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0/1405086_650.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b3eec92aa893255c42fc089476778e07afa489d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0/1405086_650.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+Processing by ActiveStorage::RepresentationsController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be36d900bf176063017c68af56d5c12a71ad70ab", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0", "filename"=>"bbking"}
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 4 LIMIT 1[0m
+[36m  Disk Storage (1.3ms) [0m[34mChecked if file exists at key: variants/t56b5mdbcfxa6tiy9to09c0faqon/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (yes)[0m
+Processing by ActiveStorage::RepresentationsController#show as JPEG
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: variants/t56b5mdbcfxa6tiy9to09c0faqon/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms | Allocations: 5468)
+
+
+Processing by ActiveStorage::RepresentationsController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8d6cda1c7720842a31eb6bed4efea430eb710e6", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0", "filename"=>"1405086_650"}
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b3eec92aa893255c42fc089476778e07afa489d", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0", "filename"=>"1405086_650"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.1ms) [0m[34mChecked if file exists at key: variants/snotmltqst8qx366gt47l06xl0zp/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (yes)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/snotmltqst8qx366gt47l06xl0zp/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg)[0m
+[36m  Disk Storage (0.6ms) [0m[34mChecked if file exists at key: variants/vx4aml4do3tolpxavsnhgtvecvhu/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (yes)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 4877)
+
+
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: variants/vx4aml4do3tolpxavsnhgtvecvhu/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg)[0m
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"bbking.jpg\"; filename*=UTF-8''bbking.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a", "filename"=>"bbking"}
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg
+Completed 302 Found in 12ms (ActiveRecord: 2.0ms | Allocations: 7988)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 900)
+
+
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:02:49 +0900
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"bbking.jpg\"; filename*=UTF-8''bbking.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d", "filename"=>"bbking"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 802)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04", "filename"=>"1405086_650"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6", "filename"=>"1405086_650"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 817)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 826)
+
+
+Started GET "/items/new" for ::1 at 2020-08-08 14:02:51 +0900
+Processing by ItemsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 747)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-08 14:02:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.7ms | Allocations: 812)
+  Rendered shared/_second-footer.html.erb (Duration: 1.0ms | Allocations: 432)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 29.1ms | ActiveRecord: 12.8ms | Allocations: 31660)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-08 14:03:03 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"aq1tbfJLNmPq5J7GTMIbjXqQ6kIKKOfnQIcaKkr1lHaR3F9vAdF5WgUC5wX0E/6yQlGh69awV8L1spmhIzTGfw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 240ms (ActiveRecord: 2.9ms | Allocations: 3195)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"aq1tbfJLNmPq5J7GTMIbjXqQ6kIKKOfnQIcaKkr1lHaR3F9vAdF5WgUC5wX0E/6yQlGh69awV8L1spmhIzTGfw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 703)
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1472)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 228ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 18851)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-08 14:03:07 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"6WgYs/NA/8Q7t13EHEi/OXQnS3dtdOV4cbs/wODxuDMq8CtAuDdm7+LUeei1ndyHIOvDHaVgsJKhtL1r1vI/KA==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/items/new
+Completed 302 Found in 217ms (ActiveRecord: 0.4ms | Allocations: 4640)
+
+
+Started GET "/items/new" for ::1 at 2020-08-08 14:03:07 +0900
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 183)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 0.2ms | Allocations: 24064)
+
+
+Started POST "/items" for ::1 at 2020-08-08 14:03:57 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YSsllY4McJbAoeRt5xSuy7Mz32NL7JwdKlAJEnpwLi7PhoGzX4lB7M904fJkDMy/kvepTBseM+S+YY6bahuvnQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fda3d134330 @tempfile=#<Tempfile:/var/folders/2k/4ksc_cbd4_37k8yzkkbpjgq00000gn/T/RackMultipart20200808-3390-x72i40.jpg>, @original_filename="1405086_650.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"1405086_650.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"awsテスト", "text"=>"AWSテスト", "category_id"=>"9", "condition_id"=>"1", "postage_id"=>"2", "prefecture_id"=>"1", "shipment_delay_id"=>"1", "price"=>"3000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mItem Create (7.4ms)[0m  [1m[32mINSERT INTO `items` (`name`, `text`, `price`, `user_id`, `category_id`, `condition_id`, `postage_id`, `prefecture_id`, `shipment_delay_id`, `created_at`, `updated_at`) VALUES ('awsテスト', 'AWSテスト', 3000, 3, 9, 1, 2, 1, 1, '2020-08-08 05:03:57.290429', '2020-08-08 05:03:57.290429')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Blob Create (2.0ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('9vhde8savb2zbetbgygqzk1jbyoc', '1405086_650.jpg', 'image/jpeg', '{\"identified\":true}', 39703, '70Avi60uJxNkKC5aqy1+pw==', '2020-08-08 05:03:57')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('image', 'Item', 6, 8, '2020-08-08 05:03:57')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mItem Update (1.3ms)[0m  [1m[33mUPDATE `items` SET `items`.`updated_at` = '2020-08-08 05:03:57.307535' WHERE `items`.`id` = 6[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: 9vhde8savb2zbetbgygqzk1jbyoc (checksum: 70Avi60uJxNkKC5aqy1+pw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: a4e1bc20-ba75-4e85-b08b-9571e1283121) to Async(active_storage_analysis) with arguments: #<GlobalID:0x00007fda1f269228 @uri=#<URI::GID gid://furima28741/ActiveStorage::Blob/8>>
+Redirected to http://localhost:3000/items/6
+Completed 302 Found in 69ms (ActiveRecord: 18.1ms | Allocations: 34884)
+
+
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121] Performing ActiveStorage::AnalyzeJob (Job ID: a4e1bc20-ba75-4e85-b08b-9571e1283121) from Async(active_storage_analysis) enqueued at 2020-08-08T05:03:57Z with arguments: #<GlobalID:0x00007fda349cb998 @uri=#<URI::GID gid://furima28741/ActiveStorage::Blob/8>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121] [36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 9vhde8savb2zbetbgygqzk1jbyoc[0m
+Started GET "/items/6" for ::1 at 2020-08-08 14:03:57 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:54:in `set_item'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:19
+  Rendered shared/_header.html.erb (Duration: 8.7ms | Allocations: 2419)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:10
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 6 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:27
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 1318)
+  Rendered items/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 10902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 1.5ms | Allocations: 29402)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72971e6d07822243b1ecba9d1133d1cb27a5ca30/1405086_650.jpg" for ::1 at 2020-08-08 14:03:57 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72971e6d07822243b1ecba9d1133d1cb27a5ca30", "filename"=>"1405086_650"}
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: 9vhde8savb2zbetbgygqzk1jbyoc (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWpFME1EVXdPRFpmTmpVd0xtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTVRRd05UQTRObDgyTlRBdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA4OjU3LjQ0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9e89df49481992a86d893faf1d08e1e8d3b141eb/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWpFME1EVXdPRFpmTmpVd0xtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTVRRd05UQTRObDgyTlRBdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA4OjU3LjQ0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9e89df49481992a86d893faf1d08e1e8d3b141eb/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms | Allocations: 3747)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWpFME1EVXdPRFpmTmpVd0xtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTVRRd05UQTRObDgyTlRBdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA4OjU3LjQ0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9e89df49481992a86d893faf1d08e1e8d3b141eb/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:03:57 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWpFME1EVXdPRFpmTmpVd0xtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTVRRd05UQTRObDgyTlRBdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA4OjU3LjQ0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9e89df49481992a86d893faf1d08e1e8d3b141eb", "filename"=>"1405086_650"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 815)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121]   [1m[36mActiveStorage::Blob Update (0.2ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `active_storage_blobs`.`metadata` = '{\"identified\":true,\"width\":650,\"height\":487,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 8[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a4e1bc20-ba75-4e85-b08b-9571e1283121] Performed ActiveStorage::AnalyzeJob (Job ID: a4e1bc20-ba75-4e85-b08b-9571e1283121) from Async(active_storage_analysis) in 220.96ms
+Started GET "/" for ::1 at 2020-08-08 14:05:26 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:19
+  Rendered shared/_header.html.erb (Duration: 4.9ms | Allocations: 2325)
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY `items`.`id` DESC[0m
+  ↳ app/views/items/index.html.erb:124
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` IN (6, 5, 4, 2, 1)[0m
+  ↳ app/views/items/index.html.erb:124
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 1088)
+  Rendered items/index.html.erb within layouts/application (Duration: 33.1ms | Allocations: 22921)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 3.4ms | Allocations: 40552)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72971e6d07822243b1ecba9d1133d1cb27a5ca30/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0/1405086_650.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+Processing by ActiveStorage::RepresentationsController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72971e6d07822243b1ecba9d1133d1cb27a5ca30", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--57ffaa12a95919cac7aa278e5cc0b497a0de44c0", "filename"=>"1405086_650"}
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 8 LIMIT 1[0m
+[36m  Disk Storage (0.1ms) [0m[34mChecked if file exists at key: variants/9vhde8savb2zbetbgygqzk1jbyoc/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (no)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a/bbking.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22bbking.jpg%22%3B+filename%2A%3DUTF-8%27%27bbking.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+[36m  Disk Storage (1.9ms) [0m[34mDownloaded file from key: 9vhde8savb2zbetbgygqzk1jbyoc[0m
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"bbking.jpg\"; filename*=UTF-8''bbking.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZMnRyWWpaak0yaDNhakZ1T1dzM00zZzVaMkowYzIxek4yUXhZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjIzN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--897fb692b19a32244b2f064ec0114cf4f1cd247d", "filename"=>"bbking"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkbmcwWVcxc05HUnZNM1J2YkhCNFlYWnpibWhuZEhabFkzWm9kUzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjVaIiwicHVyIjoiYmxvYl9rZXkifX0=--41f775232b3d70e51e4e463500a524c07a19c7b6", "filename"=>"1405086_650"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 803)
+
+
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 1409)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"bbking.jpg\"; filename*=UTF-8''bbking.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkRFUyWWpWdFpHSmpabmhoTm5ScGVUbDBiekE1WXpCbVlYRnZiaTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltSnJhVzVuTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbUpyYVc1bkxtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDIwLTA4LTA4VDA1OjA3OjQ5LjI1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3173dff61e8c2dd95bb005a27c63e92af2e6b28a", "filename"=>"bbking"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 815)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjMjV2ZEcxc2RIRnpkRGh4ZURNMk5tZDBORGRzTURaNGJEQjZjQzh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNTowNzo0OS4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0824d66b692c071ce51471054b4f4835395d1e04", "filename"=>"1405086_650"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 809)
+
+
+[36m  Disk Storage (0.4ms) [0m[32mUploaded file to key: variants/9vhde8savb2zbetbgygqzk1jbyoc/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: variants/9vhde8savb2zbetbgygqzk1jbyoc/0dac4cbdb89f7b3a33a6ba96cfe84ec9b585faaed743240311be4f7b7c1a6fe9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNToxMDoyNi4zMDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1076b034d623acd46fd9924021da0ac79e2e7100/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNToxMDoyNi4zMDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1076b034d623acd46fd9924021da0ac79e2e7100/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg
+Completed 302 Found in 89ms (ActiveRecord: 1.4ms | Allocations: 16594)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNToxMDoyNi4zMDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1076b034d623acd46fd9924021da0ac79e2e7100/1405086_650.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221405086_650.jpg%22%3B+filename%2A%3DUTF-8%27%271405086_650.jpg" for ::1 at 2020-08-08 14:05:26 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1405086_650.jpg\"; filename*=UTF-8''1405086_650.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPWFpvWkdVNGMyRjJZako2WW1WMFltZDVaM0Y2YXpGcVlubHZZeTh3WkdGak5HTmlaR0k0T1dZM1lqTmhNek5oTm1KaE9UWmpabVU0TkdWak9XSTFPRFZtWVdGbFpEYzBNekkwTURNeE1XSmxOR1kzWWpkak1XRTJabVU1QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKSmFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1UUXdOVEE0Tmw4Mk5UQXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnljeE5EQTFNRGcyWHpZMU1DNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWQT09IiwiZXhwIjoiMjAyMC0wOC0wOFQwNToxMDoyNi4zMDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1076b034d623acd46fd9924021da0ac79e2e7100", "filename"=>"1405086_650"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 811)
+
+
+Started GET "/items/new" for ::1 at 2020-08-08 14:06:31 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 192)
+  Rendered items/new.html.erb within layouts/application (Duration: 1131.7ms | Allocations: 1415114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1232ms (Views: 1174.7ms | ActiveRecord: 9.5ms | Allocations: 1462730)
+
+
+Started POST "/items" for ::1 at 2020-08-08 14:07:06 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"WGOkY9BIgIC57D+zx+H/La97bkI9tkKo8dupwZPJEEf9XZZO3nY5CNzoCzyf8smYjEb79Qp5Uhd96jYeE4Y1RQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fde6f8f4210 @tempfile=#<Tempfile:/var/folders/2k/4ksc_cbd4_37k8yzkkbpjgq00000gn/T/RackMultipart20200808-4813-t8ght.jpeg>, @original_filename="foods.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"foods.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"FOOD", "text"=>"FOOD", "category_id"=>"1", "condition_id"=>"1", "postage_id"=>"1", "prefecture_id"=>"1", "shipment_delay_id"=>"1", "price"=>"5500"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 3662ms (ActiveRecord: 0.9ms | Allocations: 304263)
+
+
+  
+Aws::Sigv4::Errors::MissingCredentialsError (Cannot load `Rails.config.active_storage.service`:
+missing credentials, provide credentials with one of the following options:
+  - :access_key_id and :secret_access_key
+  - :credentials
+  - :credentials_provider):
+  
+app/controllers/items_controller.rb:18:in `create'
+Started POST "/items" for ::1 at 2020-08-08 14:08:48 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"T9pXuuoSA7oq3/Dp9TnxHN1ijl1DsDJtPdC08qU6qFjhd/OcO5cywCUK9XZ2IZNo/Kb4chNCnZSp4TN7tVEp6w==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fde7a1b5fe8 @tempfile=#<Tempfile:/var/folders/2k/4ksc_cbd4_37k8yzkkbpjgq00000gn/T/RackMultipart20200808-4813-7zwpmd.jpeg>, @original_filename="foods.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"foods.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"FOOD", "text"=>"FOOD", "category_id"=>"1", "condition_id"=>"1", "postage_id"=>"1", "prefecture_id"=>"1", "shipment_delay_id"=>"1", "price"=>"5500"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO `items` (`name`, `text`, `price`, `user_id`, `category_id`, `condition_id`, `postage_id`, `prefecture_id`, `shipment_delay_id`, `created_at`, `updated_at`) VALUES ('FOOD', 'FOOD', 5500, 3, 1, 1, 1, 1, 1, '2020-08-08 05:08:48.725244', '2020-08-08 05:08:48.725244')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('zlrmas2ltgsl772ju07glf3idqp9', 'foods.jpeg', 'image/jpeg', '{\"identified\":true}', 958184, 'BzxSECSxuKj91zdxOe0WAg==', '2020-08-08 05:08:48')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('image', 'Item', 7, 9, '2020-08-08 05:08:48')[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mItem Update (0.2ms)[0m  [1m[33mUPDATE `items` SET `items`.`updated_at` = '2020-08-08 05:08:48.733568' WHERE `items`.`id` = 7[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 12.1ms | Allocations: 40004)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/items_controller.rb:18:in `create'
+Started GET "/items/new" for ::1 at 2020-08-08 14:09:09 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 192)
+  Rendered items/new.html.erb within layouts/application (Duration: 1130.3ms | Allocations: 1415111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1233ms (Views: 1171.9ms | ActiveRecord: 11.9ms | Allocations: 1462699)
+
+
+Started POST "/items" for ::1 at 2020-08-08 14:09:35 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"XKYhDMFJbW5jXclKcyh9hjskx7VfhE8hp3AonqerwcPyC4UqEMxcFGyIzNXwMB/yGuCxmg924NgzQa8Xt8BAcA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe9f617f6a0 @tempfile=#<Tempfile:/var/folders/2k/4ksc_cbd4_37k8yzkkbpjgq00000gn/T/RackMultipart20200808-4908-7hzvjt.jpeg>, @original_filename="foods.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"foods.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"FFO", "text"=>"FOOD", "category_id"=>"1", "condition_id"=>"1", "postage_id"=>"1", "prefecture_id"=>"1", "shipment_delay_id"=>"1", "price"=>"4500"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 1262ms (ActiveRecord: 0.8ms | Allocations: 159582)
+
+
+  
+Aws::Sigv4::Errors::MissingCredentialsError (Cannot load `Rails.config.active_storage.service`:
+missing credentials, provide credentials with one of the following options:
+  - :access_key_id and :secret_access_key
+  - :credentials
+  - :credentials_provider):
+  
+app/controllers/items_controller.rb:18:in `create'
+Started POST "/items" for ::1 at 2020-08-08 14:11:33 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"XKYhDMFJbW5jXclKcyh9hjskx7VfhE8hp3AonqerwcPyC4UqEMxcFGyIzNXwMB/yGuCxmg924NgzQa8Xt8BAcA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe9f2d085e8 @tempfile=#<Tempfile:/var/folders/2k/4ksc_cbd4_37k8yzkkbpjgq00000gn/T/RackMultipart20200808-4908-1dq5y7r.jpeg>, @original_filename="foods.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"foods.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"FFO", "text"=>"FOOD", "category_id"=>"1", "condition_id"=>"1", "postage_id"=>"1", "prefecture_id"=>"1", "shipment_delay_id"=>"1", "price"=>"4500"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Completed 500 Internal Server Error in 208312ms (ActiveRecord: 7.2ms | Allocations: 57279)
+
+
+  
+Aws::Sigv4::Errors::MissingCredentialsError (Cannot load `Rails.config.active_storage.service`:
+missing credentials, provide credentials with one of the following options:
+  - :access_key_id and :secret_access_key
+  - :credentials
+  - :credentials_provider):
+  
+app/controllers/items_controller.rb:19:in `create'
